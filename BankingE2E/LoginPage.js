@@ -9,16 +9,16 @@ var Login=function(){
 		if(text=='manager'){
 			expect(managerLogin.isPresent()).toBe(true);
 		}
-	}
+	};
 	
 	this.goToManager=function(){
 		managerLogin.click();
 		return require('./ManagerPage.js');
-	}
+	};
 	
 	this.goToCustomer=function(){
 		customerLogin.click();
 		return require('./CustomerPage.js');
-	}
-}
+	};
+};
 module.exports=new Login();

@@ -22,7 +22,7 @@ var manager=function(){
 		if(text=='Customers'){
 			expect(customers.isPresent()).toBe(true);
 		}
-	}
+	};
 
 	this.addCustomerDetails=function(fname,lname,code){
 		addCustomer.click();
@@ -33,7 +33,7 @@ var manager=function(){
 		submit.click();
 		browser.sleep(3000);
 		browser.switchTo().alert().accept();
-	}
+	};
 	
 	this.openAccountDetails=function(name,cur,msg){
 		openAccount.click();
@@ -67,7 +67,7 @@ var manager=function(){
 		var alert=browser.switchTo().alert();
 		expect(alert.getText()).toContain(msg);
 		alert.accept();
-	}
+	};
 	
 	this.deleteCustomer=function(custName,url){
 		customers.click();
@@ -78,7 +78,7 @@ var manager=function(){
 //			expect(text).toEqual(url);
 //		})
 		
-	}
-}
+	};
+};
 
 module.exports=new manager();
