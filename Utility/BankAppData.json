@@ -1,0 +1,12 @@
+{
+    "url":"http://www.way2automation.com/angularjs-protractor/banking/#/login",
+
+    "deposit":{
+        "Amount": 2000
+    },
+    "withdrawal":{
+        "Amount": 2001,
+        "RightAmount": 1000
+    }
+
+}
