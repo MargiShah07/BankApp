@@ -79,7 +79,6 @@ var manager=function(){
 //		})
 		
 	}
-	
 }
 
 module.exports=new manager();
